@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - npm install cypress --save-dev
+      - npx cypress run
+cache:
+  paths:
+    - 'node_modules/**/*'
